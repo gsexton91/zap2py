@@ -1,0 +1,16 @@
+defaults:
+  verbosity: 0
+  sleep: 0.5
+  use_socket: false
+  cache_base: cache
+
+lineups:
+  - name: Local OTA
+    zip: 40204
+    lineup_id: lineupId
+    outfile: /tmp/localxmltv.xml
+
+  - name: SpectrumCabke
+    zip: 40204
+    lineup_id: KY16673:X
+    outfile: /tmp/spectrumcablexmltv.xml

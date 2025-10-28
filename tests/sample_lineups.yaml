@@ -1,0 +1,10 @@
+defaults:
+  verbosity: 1
+  sleep: 0.5
+  use_socket: false
+
+lineups:
+  - name: Mock Lineup
+    zip: 40013
+    lineup_id: USA-OTA40013-DEFAULT
+    outfile: /tmp/mock.xml

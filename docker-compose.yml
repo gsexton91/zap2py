@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  zap2py:
+    build: .
+    container_name: zap2py
+    restart: unless-stopped
+    environment:
+      TZ: America/New_York
+      # MAIL_TO: user@example.com
+      CRON_SCHEDULE: "17 4 * * *"
+    volumes:
+      - ./lineups.yaml:/app/lineups.yaml:ro
+      - ./cache:/app/cache
+      - ./logs:/var/log/zap2py
+      - ./output:/tmp

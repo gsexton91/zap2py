@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zap2py"
+version = "1.0.0"
+description = "A modern Python tribute to the original zap2xml Perl script"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Grant Sexton", email = "user@example.com" }
+]
+keywords = ["xmltv", "epg", "zap2xml", "zap2it", "tvheadend", "guide", "docker"]
+requires-python = ">=3.10"
+dependencies = [
+    "PyYAML>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/zap2py"
+Documentation = "https://github.com/yourusername/zap2py#readme"
+Source = "https://github.com/yourusername/zap2py"
+Issues = "https://github.com/yourusername/zap2py/issues"
+
+[tool.setuptools]
+package-dir = { "" = "zap2py" }
+
+[tool.setuptools.packages.find]
+where = ["zap2py"]

@@ -1,0 +1,69 @@
+# --- Python cache & virtualenv ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+*.whl
+.env
+.venv
+env/
+venv/
+build/
+dist/
+
+# --- Perl artifacts ---
+*.bak
+*.tmp
+*.swp
+
+# --- Logs & temp files ---
+zap2py-logs/
+*.log
+*.out
+*.err
+*.pid
+
+# --- Local XMLTV / EPG caches ---
+pylocalxmltv-cache/
+pydirectvxmltv-cache/
+cache/
+*.xml
+*.xmltv
+*.xtvd.xml
+*.gz
+*.js
+*.html
+
+# --- User configuration ---
+*.conf
+*.rc
+/root/.zap2xml-env
+*.env
+
+# --- OS / Editor files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# --- Container build artifacts ---
+*.tar
+*.zip
+*.gz
+*.tgz
+*.bak
+Dockerfile.*
+docker-compose.override.yml
+
+# --- Test / scratch data ---
+tmp/
+temp/
+*.test.xml
+*.bak
+*.old
